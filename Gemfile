@@ -53,8 +53,8 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: [:mri, :windows]
-  gem "rubocop-rails", require: false
-  gem "rubocop-shopify", require: false
+  gem "rubocop-shopify", "~> 2.3", require: false
+  gem "rubocop-rails", "~> 2.12", ">= 2.12.4", require: false
 end
 
 group :development do
