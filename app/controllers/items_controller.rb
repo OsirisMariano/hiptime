@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class ItemsController < ApplicationController
-  before_action :find_item, only: [:edit, :update, :show, :destory]
+  before_action :find_item, only: [:edit, :update, :show, :destroy]
   def index
     @items = Item.all.order("created_at DESC")
   end
