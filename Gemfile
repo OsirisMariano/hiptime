@@ -31,6 +31,7 @@ gem "jbuilder"
 gem "simple_form", "~> 5.3"
 
 gem "bootstrap-sass", "~> 3.4", ">= 3.4.1"
+gem "devise", "~> 4.9"
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
@@ -55,6 +56,7 @@ group :development, :test do
   gem "debug", platforms: [:mri, :windows]
   gem "rubocop-shopify", "~> 2.3", require: false
   gem "rubocop-rails", "~> 2.12", ">= 2.12.4", require: false
+  gem "faker"
 end
 
 group :development do
@@ -73,3 +75,4 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+ 
