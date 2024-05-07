@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
 class Item < ApplicationRecord
-  attribute :body, :string
+  belongs_to :user
+  #attribute :body, :string
 end
